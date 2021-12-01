@@ -16,25 +16,26 @@
         <div class="py-5 text-center">
             <img class="mb-4 d-block mx-auto" src="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-logo.svg"
                 alt="Bootstrap Logo" width="72" height="60">
-            <h2>Confirm Information</h2>
-            <p class="lead">Voluntary Form</p>
+            <h2>Results Verification Page</h2>
+            <p class="lead">DarylGio Agoncillo</p>
         </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="container">
+        <h4 class>Confirm Information</h4>
+        <div id="results"></div>
+            <div class="row g-3">
+                <script>
+                    const resultsList = document.getElementById('results')
+                    new URLSearchParams(window.location.search).forEach((value,
+                    name) => {
+                        resultsList.append(`${name}: ${value}`)
+                        resultsList.append(document.createElement('br'))
+                    })
+                </script>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Optional JavaScript; choose one of the two! -->
